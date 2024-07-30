@@ -22,7 +22,8 @@ class SemanticCloud:
     Then produce point cloud based on depth information
     """
     def __init__(self):
-        robot_name = '/' + rospy.get_param("~agent_name", 'husky')
+        # robot_name = '/' + rospy.get_param("~agent_name", 'husky')
+        robot_name = '/' + rospy.get_param("~agent_name", '')
         
         # Get point type
         point_type = rospy.get_param(robot_name + '/semantic_pcl/point_type')

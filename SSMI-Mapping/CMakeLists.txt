@@ -89,10 +89,10 @@ install(DIRECTORY
   FILES_MATCHING PATTERN "*.yaml"
   )
 
-catkin_install_python(PROGRAMS
-  scripts/semantic_sensor_node.py
-  scripts/semantic_sensor.py
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+# catkin_install_python(PROGRAMS
+#   scripts/semantic_sensor_node.py
+#   scripts/semantic_sensor.py
+#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 install(TARGETS semantic_octomap_node semantic_octomap
   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}

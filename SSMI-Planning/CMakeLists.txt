@@ -8,7 +8,7 @@ set(PACKAGE_DEPENDENCIES
 )
 
 execute_process(
-        COMMAND "python2.7" -c "from distutils import sysconfig; print(sysconfig.get_python_inc())"
+        COMMAND "python3.8" -c "from distutils import sysconfig; print(sysconfig.get_python_inc())"
         OUTPUT_VARIABLE PYTHON_INCLUDE_DIRS
         OUTPUT_STRIP_TRAILING_WHITESPACE
 )
